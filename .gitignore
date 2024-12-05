@@ -1,0 +1,13 @@
+# tmp folder for temp usage
+/tmp
+/temp
+
+# Ignore vscode folder
+/.vscode
+
+# Ignore the CMake build folder (windows)
+/build
+/build_*
+
+# Ignore the CMake build folder (ios-build/linux-build)
+/*-build
