@@ -135,7 +135,20 @@ bool MainScene::init()
 
         drawNode->drawRect(safeArea.origin + Vec2(1, 1), safeArea.origin + safeArea.size, Color4B::BLUE);
     }
-
+    
+    auto particles = ParticleSystemQuad::create("particles/sprinkler.plist"sv);
+    if (particles == nullptr)
+    {
+        problemLoading("sprinkler.plist");
+    }
+    else
+    {
+        particles->setPosition(visibleSize / 2);
+        
+        particles->retain();
+        addChild(particles, 10);
+    }
+    
     // scheduleUpdate() is required to ensure update(float) is called on every loop
     scheduleUpdate();
 
