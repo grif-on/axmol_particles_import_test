@@ -110,7 +110,7 @@
     <integer>0</integer>
     <key>emissionRate</key>
     <integer>15</integer>
-    <key>spriteFrameUuid</key>
-    <string>e0666fe4-34ac-42d3-8ae0-49f01ee86bd8@f9941</string>
+    <key>textureFileName</key>
+    <string>dot.png</string>
   </dict>
 </plist>
