@@ -144,8 +144,6 @@ bool MainScene::init()
     else
     {
         particles->setPosition(visibleSize / 2);
-        
-        particles->retain();
         addChild(particles, 10);
     }
     
